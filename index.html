@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sketch Pad</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-4">
+        <h1 class="text-center">BLAISE Sketch Pad</h1>
+        <div class="row">
+            <div class="col-md-8">
+                <canvas id="sketchCanvas"></canvas>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="colorPicker">Choose Color:</label>
+                    <input type="color" id="colorPicker" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="brushSize">Brush Size:</label>
+                    <input type="range" id="brushSize" min="1" max="20" value="5" class="form-control-range">
+                </div>
+                <div class="form-group">
+                    <label for="brushShape">Brush Shape:</label>
+                    <select id="brushShape" class="form-control">
+                        <option value="round">Round</option>
+                        <option value="square">Square</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="bgColorPicker">Sketch Pad Background Color:</label>
+                    <input type="color" id="bgColorPicker" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="sketchPadSize">Sketch Pad Size:</label>
+                    <select id="sketchPadSize" class="form-control">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="sketchPadHeight">Sketch Pad Height:</label>
+                    <select id="sketchPadHeight" class="form-control">
+                        <option value="400">400px</option>
+                        <option value="600">600px</option>
+                        <option value="800">800px</option>
+                    </select>
+                </div>
+                <button id="clearButton" class="btn btn-danger btn-block">Clear Canvas</button>
+                <button id="saveButton" class="btn btn-success btn-block">Save Drawing</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

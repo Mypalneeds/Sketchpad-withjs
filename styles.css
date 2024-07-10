@@ -1,0 +1,40 @@
+body {
+    background-color: #f8f9fa;
+}
+
+#sketchCanvas {
+    border: 1px solid #ced4da;
+    background-color: #ffffff;
+    width: 100%;
+    height: auto;
+}
+
+#sketchCanvas.cursor-pen {
+    cursor: none;
+}
+
+.pen-indicator {
+    position: absolute;
+    pointer-events: none;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 2px solid red;
+    width: 10px;
+    height: 10px;
+    transform: translate(-50%, -50%);
+}
+
+canvas.small {
+    width: 600px;
+    height: 400px;
+}
+
+canvas.medium {
+    width: 800px;
+    height: 600px;
+}
+
+canvas.large {
+    width: 1000px;
+    height: 800px;
+}
